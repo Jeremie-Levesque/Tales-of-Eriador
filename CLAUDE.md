@@ -14,8 +14,7 @@ C:\Users\jermi\Documents\DND\Tales of Eriador\
 ├── CLAUDE.md                          ← these instructions
 ├── .gitignore                         ← excludes *.mp3 (audio is never pushed)
 ├── Reference\
-│   ├── Glossary.md                    ← spelling authority for all names and terms
-│   └── Style_Guide.md                 ← the chosen recap formats and their layout
+│   └── Glossary.md                    ← spelling authority for all names and terms
 ├── Summaries\
 │   ├── Previously_On\
 │   │   └── Session_NN_Previously_On.md
@@ -73,10 +72,10 @@ The language tags and speaker labels are both machine guesses. See the language 
 
 ## Language: a bilingual table
 
-The group is bilingual in **English and Canadian (Québécois) French** and switches between the two throughout a session, sometimes mid-sentence. The transcription tries to detect which language is being spoken, so the transcript contains both.
+The group is bilingual in **English and Canadian French** and switches between the two throughout a session, sometimes mid-sentence. The transcription tries to detect which language is being spoken, so the transcript contains both.
 
 - **Read and understand both languages fully.** French passages carry just as much of the story as English ones, including actions, rolls, decisions, NPC dialogue and jokes. Never skip or skim a line because it's in French.
-- **Expect Québécois speech:** informal and spoken forms (for example *tsé*, *pis*, *ben*, *chu*, *icitte*, *là*), anglicisms, and Québécois swearing. Interpret what was meant, not the literal words.
+- **Expect informal spoken Canadian French:** casual and spoken forms (for example *tsé*, *pis*, *ben*, *chu*, *là*), anglicisms, and swearing. Interpret what was meant, not the literal words.
 - **Expect language-detection errors.** The `[EN]`/`[FR]` tag can be wrong, and the transcriber sometimes renders French as garbled English or English as garbled French. When a line reads as nonsense, try reading it as the other language spoken aloud, and use context.
 - **Names are almost always spoken in English**, even inside French sentences. So:
   - A name that looks French-ified or phonetically mangled is probably a transcription error for the English name. Check the glossary.
@@ -104,8 +103,7 @@ Attendance matters because a diarized transcript only shows speaker labels, and 
 Before reading the transcript, read:
 
 1. `Reference\Glossary.md` in full.
-2. `Reference\Style_Guide.md`.
-3. **Every previous session's recap files, all of them, from Session 01 onward**, not just the last few. Read all four formats for every past session, in order. This gives you:
+2. **Every previous session's recap files, all of them, from Session 01 onward**, not just the last few. Read all four formats for every past session, in order. This gives you:
    - **the full story context:** who every NPC is, what they've said and done, how relationships between the characters have developed, which promises and threads are still open, and callbacks to early sessions that may matter again;
    - **the established style:** so the new recaps match the structure, length, tone and formatting the group is used to.
 
@@ -183,7 +181,22 @@ Once the attendance, speaker map, any uncertain attributions, and spelling answe
 3. **Character Spotlights**: one section per character (Hanarr, Thalion, Nihla, Osric).
 4. **Campaign Ledger**: quests and leads, NPCs, places, loot, notable rolls, decisions, and all open threads.
 
-`Reference\Style_Guide.md` defines the exact layout of each format and the header/navigation block every file starts and ends with. Follow it, and match the structure, length, tone and formatting of all the previous sessions' recap files you read in Step 2 (the Session 01 files are the original reference examples). When the user asks for a style change, update the style guide so the change sticks.
+Match the structure, length, tone and formatting of all the previous sessions' recap files you read in Step 2 (the Session 01 files are the original examples), and follow the layout below. When the user asks for a style change, update this section so the change sticks.
+
+**Layout of every recap file:**
+
+1. Title: `# Session NN: <Format name>`.
+2. Navigation line: `[Home](../../README.md) · Session NN: ` followed by the four formats in this order: Previously On · Scene-by-Scene Recap · Character Spotlights · Campaign Ledger. The current format is in bold; the other three link to that session's other files.
+3. A table with the real date, the in-world date, and attendance (player and character, and how any absent character was handled).
+4. An italic line linking the transcript: `*Timestamps such as [01:23:45] point to the [session transcript](../../Recordings/Session%20NN/Session_NN_Readable.md).*`
+5. `---`, the body, `---`, then the navigation line again.
+
+**What goes in each format:**
+
+- **Previously On:** 150–250 words to read aloud at the start of the next session. Opens with "Previously, on Tales of Eriador…", short paragraphs with a timestamp at the start of each beat, character names in bold on first mention, and a one-line hook for where the next session begins.
+- **Scene-by-Scene Recap:** one `### Scene N: <Title> [start–end]` section per scene, in order. Each has a 3–6 sentence paragraph, then timestamped bullets as relevant: **NPCs**, **Places**, **Clues**, **Rolls** (notable ones only), **Loot**/**Items**.
+- **Character Spotlights:** one `### <Character> (<Race> <Class>, <Player>)` section each, in this order: Hanarr, Thalion, Nihla, Osric. Timestamped bullets on what the character did, said, decided and noticed, notable rolls, and relationships, ending with a **Gained:** line (items, money, conditions, Shadow points). If a character was absent or played by the DM, say so at the top of their section.
+- **Campaign Ledger:** these sections in order: **Quests and leads** (table: Lead | Source | Status, with statuses such as New, Accepted, Advanced, Resolved, Deferred), **NPCs met** (table: NPC | Who | First seen), **Places** (table: Place | Notes), **Loot, rewards and conditions**, **Notable rolls**, **Decisions**, and **Open threads and questions**. Every row and bullet has a timestamp.
 
 **Content rules:**
 
@@ -201,7 +214,7 @@ Once the attendance, speaker map, any uncertain attributions, and spelling answe
   - `Summaries\Scene_Recaps\Session_NN_Scene_Recap.md`
   - `Summaries\Character_Spotlights\Session_NN_Character_Spotlights.md`
   - `Summaries\Campaign_Ledger\Session_NN_Campaign_Ledger.md`
-- Each file starts with the title, navigation line, metadata table (real date, in-world date, attendance and how absent characters were handled) and transcript link described in the style guide.
+- Each file starts with the title, navigation line, metadata table (real date, in-world date, attendance and how absent characters were handled) and transcript link described in Step 6.
 - **Update `README.md`:** add a row to the "Session recaps" table linking all four recaps and the transcript for the new session. Update the party table if a character's details changed (for example, a new title, home or subclass), and add links to any new reference files.
 - Check every link you wrote points to a file that exists, with spaces written as `%20`.
 
@@ -223,7 +236,7 @@ After every session, update `Reference\Glossary.md`:
 - [ ] Every unknown spelling was asked about and resolved.
 - [ ] The recaps are entirely in English, with no untranslated French.
 - [ ] Every bullet and section has a timestamp.
-- [ ] All four recap files exist, follow the style guide, and agree with each other.
+- [ ] All four recap files exist, follow the layout in Step 6, and agree with each other.
 - [ ] The Campaign Ledger carries forward every still-open thread from the previous session.
 - [ ] The four recaps, the README and the glossary are all saved in the campaign folder, and every link works.
 - [ ] You've told the user which files were added or changed, so they can commit and push them to GitHub.

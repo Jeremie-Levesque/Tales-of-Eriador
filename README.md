@@ -32,7 +32,6 @@ Each session has four recaps. Start with **Previously On** for a quick refresher
 ## Reference
 
 - [Glossary](Reference/Glossary.md): every name, place, faction and item, with spellings.
-- [Style Guide](Reference/Style_Guide.md): how the recaps are laid out.
 
 ## Behind the scenes
 
