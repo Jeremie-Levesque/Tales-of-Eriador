@@ -107,7 +107,11 @@ Before reading the transcript, read:
 
 1. `Reference\Glossary.md` in full.
 2. `Reference\Style_Guide.md`.
-3. The **previous session's four recap files** (and the one before, if useful), for continuity. Above all, read the previous **Campaign Ledger**: its open threads, NPCs and quest statuses are carried forward into the new ledger.
+3. **Every previous session's recap files, all of them, from Session 01 onward**, not just the last few. Read all four formats for every past session, in order. This gives you:
+   - **the full story context:** who every NPC is, what they've said and done, how relationships between the characters have developed, which promises and threads are still open, and callbacks to early sessions that may matter again;
+   - **the established style:** so the new recaps match the structure, length, tone and formatting the group is used to.
+
+   Pay special attention to the **most recent Campaign Ledger**: its open threads, NPCs and quest statuses are carried forward into the new ledger. If an older session raised a thread that later ledgers dropped by mistake, restore it.
 
 ### Step 3. Read the entire transcript slowly and take in every part of it
 
@@ -181,7 +185,7 @@ Once the attendance, speaker map, any uncertain attributions, and spelling answe
 3. **Character Spotlights**: one section per character (Hanarr, Thalion, Nihla, Osric).
 4. **Campaign Ledger**: quests and leads, NPCs, places, loot, notable rolls, decisions, and all open threads.
 
-`Reference\Style_Guide.md` defines the exact layout of each format and the header/navigation block every file starts and ends with. Follow it, and match the structure, length, tone and formatting of the most recent session's files (the Session 01 files are the reference examples). When the user asks for a style change, update the style guide so the change sticks.
+`Reference\Style_Guide.md` defines the exact layout of each format and the header/navigation block every file starts and ends with. Follow it, and match the structure, length, tone and formatting of all the previous sessions' recap files you read in Step 2 (the Session 01 files are the original reference examples). When the user asks for a style change, update the style guide so the change sticks.
 
 **Content rules:**
 
@@ -215,6 +219,7 @@ After every session, update `Reference\Glossary.md`:
 ### Step 9. Final check before handing over
 
 - [ ] Attendance was asked before the transcript was read.
+- [ ] Every previous session's recap files were read, all four formats, from Session 01 onward.
 - [ ] The whole transcript was read, every line, English and French.
 - [ ] The speaker map is confirmed, speaker labels were checked against context rather than trusted blindly, and every action is attributed to the right character.
 - [ ] Every unknown spelling was asked about and resolved.
