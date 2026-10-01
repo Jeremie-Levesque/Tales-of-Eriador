@@ -1,6 +1,8 @@
 # Tales of Eriador: Glossary
 
-This is the spelling authority for all summaries. Update it after every session (see `CLAUDE.md`, Step 8).
+[Home](../README.md)
+
+This is the spelling authority for all recaps. Update it after every session (see `CLAUDE.md`, Step 8).
 
 **Entry format:** **Term**: type · first seen (Session N [timestamp]) · description · *heard as:* transcription variants
 

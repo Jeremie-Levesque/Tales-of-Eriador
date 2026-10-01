@@ -1,4 +1,6 @@
-# Tales of Eriador: Session Summary Instructions
+# Tales of Eriador: Session Recap Instructions
+
+[Home](README.md)
 
 These instructions apply every time a session transcript is summarized. Follow them in order. Do not skip steps, even for a short session.
 
@@ -8,21 +10,36 @@ These instructions apply every time a session transcript is summarized. Follow t
 
 ```
 C:\Users\jermi\Documents\DND\Tales of Eriador\
+├── README.md                          ← GitHub landing page; links to every recap and file
 ├── CLAUDE.md                          ← these instructions
+├── .gitignore                         ← excludes *.mp3 (audio is never pushed)
 ├── Reference\
 │   ├── Glossary.md                    ← spelling authority for all names and terms
-│   └── Style_Guide.md                 ← the summary style the user chose
+│   └── Style_Guide.md                 ← the chosen recap formats and their layout
 ├── Summaries\
-│   ├── Session_Index.md               ← one row per session
-│   └── Session_NN_Summary.md          ← the summaries (Session_01_Summary.md, ...)
+│   ├── Previously_On\
+│   │   └── Session_NN_Previously_On.md
+│   ├── Scene_Recaps\
+│   │   └── Session_NN_Scene_Recap.md
+│   ├── Character_Spotlights\
+│   │   └── Session_NN_Character_Spotlights.md
+│   ├── Campaign_Ledger\
+│   │   └── Session_NN_Campaign_Ledger.md
+│   └── Style_Samples\
+│       └── Session_01_All_Styles.md   ← the Session 1 eight-style sampler (reference only)
 └── Recordings\
     └── Session NN\
-        ├── Session_NN_YYYY-MM-DD.mp3  ← audio (not needed for summarizing)
+        ├── Session_NN_YYYY-MM-DD.mp3  ← audio (not needed for summarizing; git-ignored)
         ├── Session_NN_Readable.md     ← the transcript to read (primary)
         └── Session_NN.json            ← segment-level transcript (for checking)
 ```
 
 - Always read from and write to this folder. The claude.ai project only holds a pointer to it.
+- **The folder is a git repository** pushed to GitHub (`https://github.com/Jeremie-Levesque/Tales-of-Eriador`) so the recaps can be shared with the DM, who reads them on GitHub. So:
+  - `README.md` is the landing page. Keep it up to date (Step 7) so every recap and reference file is one click away.
+  - All links between files must be **relative** (for example `Summaries/Scene_Recaps/Session_02_Scene_Recap.md`), use forward slashes, and write spaces as `%20` (for example `Recordings/Session%2002/Session_02_Readable.md`), so they work on GitHub.
+  - Do not commit, push, or change git settings unless the user asks. When you finish, list the files you added or changed so the user can commit and push them.
+  - Never add audio files to the repository.
 - If the folder can't be reached (the chat isn't linked to the computer, or the computer is offline), **stop and tell the user**. Don't work from old copies or from memory, and don't save summaries anywhere else.
 - Edit existing files in place (read the current version first, then write back the full updated file). Never recreate a file from memory.
 - When saving files to the folder by copying them over from the cloud workspace, copy from a **new file name each time** (a file name that was already used can send the old version again). Then read the saved file back from the folder and confirm it matches before telling the user it's done.
@@ -68,7 +85,7 @@ The group is bilingual in **English and Canadian (Québécois) French** and swit
   - Default to the English/Tolkien spelling when resolving names. Still ask the user about anything you're not sure of (Step 5).
   - Record these French-mode mangles as "heard as" variants in the glossary.
 - **Language switches can also confuse diarization,** since the speaker segmentation may break or relabel at a switch. Be extra careful with attribution around them (Step 4).
-- **The summary is written in English only** (Step 6). Translate everything said in French into natural English. Don't include French text in the summary, even in quotes.
+- **The recaps are written in English only** (Step 6). Translate everything said in French into natural English. Don't include French text in the recaps, even in quotes.
 
 ---
 
@@ -90,7 +107,7 @@ Before reading the transcript, read:
 
 1. `Reference\Glossary.md` in full.
 2. `Reference\Style_Guide.md`.
-3. The **most recent one or two summaries** in `Summaries\`, for continuity: open threads, NPCs already met, where the party is.
+3. The **previous session's four recap files** (and the one before, if useful), for continuity. Above all, read the previous **Campaign Ledger**: its open threads, NPCs and quest statuses are carried forward into the new ledger.
 
 ### Step 3. Read the entire transcript slowly and take in every part of it
 
@@ -129,14 +146,14 @@ Before reading the transcript, read:
 Before writing:
 
 1. **Build a speaker map** (for example `SPEAKER_00 → Andre (DM)`, `SPEAKER_01 → Jeremie (Hanarr)`). Use attendance, character names used in speech, the DM addressing players by name, and each speaker's patterns. If any label is uncertain, show the map to the user and ask them to confirm it. Even with a confirmed map, check individual lines against context as you go, since single lines can still be mislabeled.
-2. **Attribute actions to characters, not players.** In the summary, "Jeremie says he draws his axe" becomes "**Hanarr** drew his axe." Use player names only for out-of-character moments.
+2. **Attribute actions to characters, not players.** In the recaps, "Jeremie says he draws his axe" becomes "**Hanarr** drew his axe." Use player names only for out-of-character moments.
 3. **Resolve every "you"** (or *tu*/*vous*). When the DM says "you see..." or "you take 6 damage", work out which character is meant from context (who just acted, who was addressed, who rolled). If it can't be determined, ask the user. Do not guess.
 4. **Use race and class as clues.** The DM or other players may call characters "the dwarf", "the elf", "the hobbit"/"the halfling" or "the human" (or *le nain*, *l'elfe*, *le hobbit*, *le humain*), or refer to class abilities (rage for the barbarian, spells and healing for the cleric, sneak attack for the rogue). Use these to confirm who acted. Don't assume, though: an NPC can be a dwarf too, and some abilities overlap between classes.
 5. **Do a separate attribution pass.** Before writing, go through your notes line by line and check who did each thing: who spoke each notable line, who rolled, who found each clue, who carries each item. Flag any line where the speaker label and the context disagree, and include those in your questions to the user if the context doesn't settle them. The JSON's segment-level speakers can help here.
 
 ### Step 5. Ask about spelling before writing
 
-Before writing any part of the summary, collect **every word you are unsure of** (names, places, items, Elvish or Dwarvish words, anything not in the glossary) and ask the user about all of them in **one batched question**. For each word give:
+Before writing any part of the recaps, collect **every word you are unsure of** (names, places, items, Elvish or Dwarvish words, anything not in the glossary) and ask the user about all of them in **one batched question**. For each word give:
 
 - the word as the transcript has it,
 - the timestamp,
@@ -145,11 +162,11 @@ Before writing any part of the summary, collect **every word you are unsure of**
 
 Names are nearly always spoken in English, so base your best guess on the English/Tolkien form even if the transcript rendered the word in French. Canon names follow Tolkien's spelling, with diacritics (for example Dúnedain, Amon Sûl, Annúminas). Don't assume a canon name is meant if the DM might have invented one. Ask.
 
-Once the attendance, speaker map, any uncertain attributions, and spelling answers are all in, write the summary.
+Once the attendance, speaker map, any uncertain attributions, and spelling answers are all in, write the recaps.
 
-### Step 6. Write the summary
+### Step 6. Write the four recaps
 
-**The summary is in English only.** Translate French dialogue and narration into natural, idiomatic English that keeps the meaning and tone (including humour). Quotes are translated too. Don't leave French words or phrases in the summary.
+**The recaps are in English only.** Translate French dialogue and narration into natural, idiomatic English that keeps the meaning and tone (including humour). Quotes are translated too. Don't leave French words or phrases in the recaps.
 
 **Timestamps are required.** Every bullet point and every section or paragraph starts with the transcript timestamp where that moment happens, in the transcript's `[HH:MM:SS]` format:
 
@@ -157,10 +174,14 @@ Once the attendance, speaker map, any uncertain attributions, and spelling answe
 - A span: `[01:23:45–01:41:10]`
 - Section headers carry the span they cover.
 
-**Style:**
+**Formats:** every session gets **four separate recap files**, chosen by the DM after Session 1:
 
-- **Session 1 (first summary ever):** write the summary in **as many styles as possible** so the user can pick what they like. Deliver them together in one document, each clearly labeled. See "First-summary style menu" below. Every style still follows the timestamp and English-only rules. Afterwards, ask the user which style or mix they prefer, and record the answer in `Reference\Style_Guide.md` (structure, sections, length, voice, formatting, and anything they said they did or didn't like).
-- **Every later session:** follow `Reference\Style_Guide.md`, and match the structure, length, tone and formatting of the most recent summaries. When the user asks for a style change, update the style guide so the change sticks.
+1. **Previously On**: a 150–250 word recap to read aloud at the start of the next session.
+2. **Scene-by-Scene Recap**: one section per scene, a short paragraph plus NPC/place/clue/roll/loot bullets.
+3. **Character Spotlights**: one section per character (Hanarr, Thalion, Nihla, Osric).
+4. **Campaign Ledger**: quests and leads, NPCs, places, loot, notable rolls, decisions, and all open threads.
+
+`Reference\Style_Guide.md` defines the exact layout of each format and the header/navigation block every file starts and ends with. Follow it, and match the structure, length, tone and formatting of the most recent session's files (the Session 01 files are the reference examples). When the user asks for a style change, update the style guide so the change sticks.
 
 **Content rules:**
 
@@ -168,17 +189,23 @@ Once the attendance, speaker map, any uncertain attributions, and spelling answe
 - Use past tense for story events, unless the chosen style says otherwise.
 - Bold character names on first mention in each section.
 - Name NPCs exactly as spelled in the glossary.
-- End with **open threads** (unresolved questions, active quests, promises made) unless the chosen style omits them.
+- **Open threads live in the Campaign Ledger.** Carry forward every still-open thread from the previous ledger, add new ones, and mark any that were resolved or advanced this session.
+- The four files must agree with each other: same spellings, same facts, same attributions.
 
-### Step 7. Save the summary
+### Step 7. Save the recaps and update the README
 
-- Save to `Summaries\Session_NN_Summary.md` (zero-padded, for example `Session_03_Summary.md`).
-- Start the file with: session number, real-world date, attendance (and how absent characters were handled), and in-world date or season if known.
-- Add a row to `Summaries\Session_Index.md`.
+- Save the four files (zero-padded session number, for example `03`):
+  - `Summaries\Previously_On\Session_NN_Previously_On.md`
+  - `Summaries\Scene_Recaps\Session_NN_Scene_Recap.md`
+  - `Summaries\Character_Spotlights\Session_NN_Character_Spotlights.md`
+  - `Summaries\Campaign_Ledger\Session_NN_Campaign_Ledger.md`
+- Each file starts with the title, navigation line, metadata table (real date, in-world date, attendance and how absent characters were handled) and transcript link described in the style guide.
+- **Update `README.md`:** add a row to the "Session recaps" table linking all four recaps and the transcript for the new session. Update the party table if a character's details changed (for example, Thalion's class once it's known), and add links to any new reference files.
+- Check every link you wrote points to a file that exists, with spaces written as `%20`.
 
 ### Step 8. Update the glossary
 
-After every summary, update `Reference\Glossary.md`:
+After every session, update `Reference\Glossary.md`:
 
 - **Add every new term** from the session: NPCs, places, factions, items, creatures, in-world words. Include the confirmed spelling, type, first appearance (`Session N [timestamp]`), a short description, and **"heard as"** variants (how the transcript mangled it, including French-mode renderings), so future transcripts are easier to correct.
 - **Update existing entries** with new facts, such as an NPC's changed status, a place's new meaning, or an item that changed hands.
@@ -191,24 +218,9 @@ After every summary, update `Reference\Glossary.md`:
 - [ ] The whole transcript was read, every line, English and French.
 - [ ] The speaker map is confirmed, speaker labels were checked against context rather than trusted blindly, and every action is attributed to the right character.
 - [ ] Every unknown spelling was asked about and resolved.
-- [ ] The summary is entirely in English, with no untranslated French.
+- [ ] The recaps are entirely in English, with no untranslated French.
 - [ ] Every bullet and section has a timestamp.
-- [ ] The style matches the style guide (or, for Session 1, the full multi-style set is there).
-- [ ] The summary, session index and glossary are all saved in the campaign folder.
-
----
-
-## First-summary style menu (Session 1 only)
-
-Write all of these, each under its own heading, and each with timestamps:
-
-1. **Chronological log.** Timestamped bullets in order, grouped under scene headers. Dense and factual.
-2. **Scene-by-scene recap.** One headed section per scene: a short paragraph of what happened, then key bullets (NPCs, clues, loot).
-3. **Chronicle of the West (in-world prose).** The session retold as narrative in a restrained, Tolkien-flavoured chronicler's voice, like an entry in a hobbit's Red Book. Each paragraph starts with its timestamp.
-4. **"Previously on..." recap.** 150–250 words, written to be read aloud at the start of the next session.
-5. **Character spotlights.** One section each for Hanarr, Thalion, Nihla and Osric: what they did, said, decided and gained or lost.
-6. **Campaign ledger.** Reference tables and lists: quests and threads (new, advanced, resolved), NPCs met, places visited, loot and rewards, clues and lore, decisions made, open questions.
-7. **TL;DR.** 3–5 lines.
-8. **Quotes and table moments.** Best in-character lines and funniest out-of-character moments, attributed correctly and translated into English.
-
-End the document by asking which style or combination the user wants from now on.
+- [ ] All four recap files exist, follow the style guide, and agree with each other.
+- [ ] The Campaign Ledger carries forward every still-open thread from the previous session.
+- [ ] The four recaps, the README and the glossary are all saved in the campaign folder, and every link works.
+- [ ] You've told the user which files were added or changed, so they can commit and push them to GitHub.
