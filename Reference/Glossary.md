@@ -15,12 +15,12 @@ This is the spelling authority for all recaps. Update it after every session (se
 | Player | Character | Race / culture | Class / calling | Notes |
 |---|---|---|---|---|
 | Jeremie | **Hanarr** | Dwarf, from the Blue Mountains | Barbarian | Caravan guard for Bill Butterbur. Battle-axe, maul, leather pelt; long beard and hair going grey. Name taken from the Norse poem Tolkien drew his dwarf names from. *Heard as:* Hennar, Renard, Honor, Hanar, Hammer |
-| Dominic | **Thalion** | Elf, of Rivendell | TBD | About 7 ft, golden hair, facial scar, chainmail, curved longsword, shield, bascinet, lute. 8 years in captivity; mentored by Aldrin, son of Borin. *Heard as:* Talion |
+| Dominic | **Thalion** | Elf, of Rivendell | Fighter | About 7 ft, golden hair, facial scar, chainmail, curved longsword, shield, bascinet, lute. 8 years in captivity; mentored by Aldrin, son of Borin. *Heard as:* Talion |
 | Alex | **Nihla Hornblower** | Halfling (Hobbit), Longbottom | Cleric | Of the Hornblower pipe-weed family. Brown hair, brown eyes. Hobbit scale mail, pot-lid shield. *Heard as:* Nyla, Nellah, Naila, Nihila |
 | Benoit | **Osric Thistlewool** | Human, of Bree | Rogue | Lives on the south edge of Bree. Long brown hair, scar on forehead, scimitar. Has 3 Shadow points (Session 1). *Heard as:* Disselmoor, Thistle…, Thistlewood |
 | Andre | DM | | | Voices all NPCs |
 
-*Fill in anything missing (Thalion's class, subclass, homeland, etc.) as it comes up in play or when the user supplies it.*
+*Fill in anything missing (subclasses, homelands, etc.) as it comes up in play or when the user supplies it.*
 
 ---
 

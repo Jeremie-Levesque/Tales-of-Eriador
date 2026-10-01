@@ -25,7 +25,7 @@
 - [02:33:30] **Confronted the old knitter** at the Prancing Pony, got riddles, and left with a warning.
 - **Gained:** 20 gp retainer [01:26:00].
 
-### Thalion (Elf, Dominic)
+### Thalion (Elf Fighter, Dominic)
 - [00:21:31] About seven feet tall, golden-haired, scarred, in chainmail with a curved longsword, shield and an ugly bascinet.
 - [00:24:21] Spent eight years in captivity and six months home; travels with his mentor Aldrin, son of Borin, who sent him to Bree for answers.
 - [00:43:45] Introduced himself to Nihla as "Thalion, of Rivendell."

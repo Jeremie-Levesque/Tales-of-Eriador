@@ -23,10 +23,8 @@ C:\Users\jermi\Documents\DND\Tales of Eriador\
 │   │   └── Session_NN_Scene_Recap.md
 │   ├── Character_Spotlights\
 │   │   └── Session_NN_Character_Spotlights.md
-│   ├── Campaign_Ledger\
-│   │   └── Session_NN_Campaign_Ledger.md
-│   └── Style_Samples\
-│       └── Session_01_All_Styles.md   ← the Session 1 eight-style sampler (reference only)
+│   └── Campaign_Ledger\
+│       └── Session_NN_Campaign_Ledger.md
 └── Recordings\
     └── Session NN\
         ├── Session_NN_YYYY-MM-DD.mp3  ← audio (not needed for summarizing; git-ignored)
@@ -53,7 +51,7 @@ C:\Users\jermi\Documents\DND\Tales of Eriador\
 | Player | Character | Race | Class |
 |---|---|---|---|
 | Jeremie | **Hanarr** | Dwarf | Barbarian |
-| Dominic | **Thalion** | Elf | Unknown (check the glossary) |
+| Dominic | **Thalion** | Elf | Fighter |
 | Alex | **Nihla** | Halfling (Hobbit) | Cleric |
 | Benoit | **Osric** | Human | Rogue |
 | Andre | DM (voices all NPCs, narrates the world) | | |
@@ -152,7 +150,7 @@ Before writing:
 1. **Build a speaker map** (for example `SPEAKER_00 → Andre (DM)`, `SPEAKER_01 → Jeremie (Hanarr)`). Use attendance, character names used in speech, the DM addressing players by name, and each speaker's patterns. If any label is uncertain, show the map to the user and ask them to confirm it. Even with a confirmed map, check individual lines against context as you go, since single lines can still be mislabeled.
 2. **Attribute actions to characters, not players.** In the recaps, "Jeremie says he draws his axe" becomes "**Hanarr** drew his axe." Use player names only for out-of-character moments.
 3. **Resolve every "you"** (or *tu*/*vous*). When the DM says "you see..." or "you take 6 damage", work out which character is meant from context (who just acted, who was addressed, who rolled). If it can't be determined, ask the user. Do not guess.
-4. **Use race and class as clues.** The DM or other players may call characters "the dwarf", "the elf", "the hobbit"/"the halfling" or "the human" (or *le nain*, *l'elfe*, *le hobbit*, *le humain*), or refer to class abilities (rage for the barbarian, spells and healing for the cleric, sneak attack for the rogue). Use these to confirm who acted. Don't assume, though: an NPC can be a dwarf too, and some abilities overlap between classes.
+4. **Use race and class as clues.** The DM or other players may call characters "the dwarf", "the elf", "the hobbit"/"the halfling" or "the human" (or *le nain*, *l'elfe*, *le hobbit*, *le humain*), or refer to class abilities (rage for the barbarian, spells and healing for the cleric, sneak attack for the rogue, Second Wind or Action Surge for the fighter). Use these to confirm who acted. Don't assume, though: an NPC can be a dwarf too, and some abilities overlap between classes.
 5. **Do a separate attribution pass.** Before writing, go through your notes line by line and check who did each thing: who spoke each notable line, who rolled, who found each clue, who carries each item. Flag any line where the speaker label and the context disagree, and include those in your questions to the user if the context doesn't settle them. The JSON's segment-level speakers can help here.
 
 ### Step 5. Ask about spelling before writing
@@ -204,7 +202,7 @@ Once the attendance, speaker map, any uncertain attributions, and spelling answe
   - `Summaries\Character_Spotlights\Session_NN_Character_Spotlights.md`
   - `Summaries\Campaign_Ledger\Session_NN_Campaign_Ledger.md`
 - Each file starts with the title, navigation line, metadata table (real date, in-world date, attendance and how absent characters were handled) and transcript link described in the style guide.
-- **Update `README.md`:** add a row to the "Session recaps" table linking all four recaps and the transcript for the new session. Update the party table if a character's details changed (for example, Thalion's class once it's known), and add links to any new reference files.
+- **Update `README.md`:** add a row to the "Session recaps" table linking all four recaps and the transcript for the new session. Update the party table if a character's details changed (for example, a new title, home or subclass), and add links to any new reference files.
 - Check every link you wrote points to a file that exists, with spaces written as `%20`.
 
 ### Step 8. Update the glossary
@@ -213,7 +211,7 @@ After every session, update `Reference\Glossary.md`:
 
 - **Add every new term** from the session: NPCs, places, factions, items, creatures, in-world words. Include the confirmed spelling, type, first appearance (`Session N [timestamp]`), a short description, and **"heard as"** variants (how the transcript mangled it, including French-mode renderings), so future transcripts are easier to correct.
 - **Update existing entries** with new facts, such as an NPC's changed status, a place's new meaning, or an item that changed hands.
-- **Fill in character details** that come up in play, such as Thalion's class, subclasses, homelands or notable gear, in the Players and characters table.
+- **Fill in character details** that come up in play, such as subclasses, homelands or notable gear, in the Players and characters table.
 - Correct any glossary spelling the user fixed.
 
 ### Step 9. Final check before handing over

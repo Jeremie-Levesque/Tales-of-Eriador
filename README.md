@@ -7,7 +7,7 @@
 | Character | Race and class | Player |
 |---|---|---|
 | **Hanarr** | Dwarf Barbarian, of the Blue Mountains | Jeremie |
-| **Thalion** | Elf, of Rivendell | Dominic |
+| **Thalion** | Elf Fighter, of Rivendell | Dominic |
 | **Nihla Hornblower** | Halfling (Hobbit) Cleric, of Longbottom | Alex |
 | **Osric Thistlewool** | Human Rogue, of Bree | Benoit |
 
@@ -37,6 +37,5 @@ Each session has four recaps. Start with **Previously On** for a quick refresher
 ## Behind the scenes
 
 - [How the recaps are made](CLAUDE.md): instructions Claude follows to turn each session's recording into recaps.
-- [Session 01 style sampler](Summaries/Style_Samples/Session_01_All_Styles.md): the first session written in eight styles, used to choose the recap formats above.
 
 *Timestamps such as [01:23:45] in the recaps point to the matching moment in that session's transcript.*

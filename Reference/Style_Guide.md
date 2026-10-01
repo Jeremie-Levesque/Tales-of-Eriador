@@ -13,7 +13,7 @@ After seeing Session 1 written in eight styles, the DM chose **four recap format
 | 3 | Character Spotlights | `Summaries/Character_Spotlights/` | `Session_NN_Character_Spotlights.md` |
 | 4 | Campaign Ledger | `Summaries/Campaign_Ledger/` | `Session_NN_Campaign_Ledger.md` |
 
-**Reference examples:** the Session 01 files in those folders. Match their structure, length, tone and formatting. The full eight-style sampler is in `Summaries/Style_Samples/Session_01_All_Styles.md` for reference only.
+**Reference examples:** the Session 01 files in those folders. Match their structure, length, tone and formatting.
 
 ---
 
