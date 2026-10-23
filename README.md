@@ -20,6 +20,7 @@ Each session has four recaps. Start with **Previously On** for a quick refresher
 | Session | Date | Previously On | Scene Recap | Character Spotlights | Campaign Ledger | Transcript |
 |---|---|---|---|---|---|---|
 | 01 | 2026-09-29 | [Read](Summaries/Previously_On/Session_01_Previously_On.md) | [Read](Summaries/Scene_Recaps/Session_01_Scene_Recap.md) | [Read](Summaries/Character_Spotlights/Session_01_Character_Spotlights.md) | [Read](Summaries/Campaign_Ledger/Session_01_Campaign_Ledger.md) | [Read](Recordings/Session%2001/Session_01_Readable.md) |
+| 02 | 2026-10-21 | [Read](Summaries/Previously_On/Session_02_Previously_On.md) | [Read](Summaries/Scene_Recaps/Session_02_Scene_Recap.md) | [Read](Summaries/Character_Spotlights/Session_02_Character_Spotlights.md) | [Read](Summaries/Campaign_Ledger/Session_02_Campaign_Ledger.md) | [Read](Recordings/Session%2002/Session_02_Readable.md) |
 
 **What each recap is:**
 - **Previously On:** a short recap to read aloud at the start of the next session.
